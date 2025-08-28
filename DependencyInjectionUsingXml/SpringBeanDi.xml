@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean id="student1" class="com.garvit.it.Student">
+    <property name="sid" value="10001"></property>
+    <property name="name" value="Garvit"></property>
+    <property name="address" ref="address1"></property>
+    </bean>
+    
+    
+    
+    <!-- Address Bean Configration -->
+    
+    <bean id="address1" class="com.garvit.it.Address">
+    <property name="city" value="Kanpur"></property>
+    <property name="pinCode" value="209715"></property>
+    </bean>
+    
+    
+  
+
+</beans>

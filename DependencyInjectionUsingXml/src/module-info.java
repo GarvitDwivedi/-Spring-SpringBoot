@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module DependencyInjectionUsingXml {
+	exports com.garvit.it;
+	requires spring.context;
+}
