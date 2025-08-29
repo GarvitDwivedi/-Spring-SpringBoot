@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    
+    <bean id="student1" class="com.garvit.it.Student"></bean>
+    
+    <bean id="address1" class="com.garvit.it.Address"></bean>
+    
+    
+    
+    
+    <bean id="address2" class="com.garvit.it.Address">
+    <constructor-arg value="209777"></constructor-arg>
+    <constructor-arg value="rameshwaram"></constructor-arg>
+    <constructor-arg value="India"></constructor-arg>  
+    </bean>
+    
+    
+    <bean id="student2" class="com.garvit.it.Student">
+    <constructor-arg value="10001"></constructor-arg>
+    <constructor-arg value="Bheeshma"></constructor-arg>
+    <constructor-arg ref="address2"></constructor-arg>
+    </bean>
+    
+    
+    <bean id="address3" class="com.garvit.it.Address">
+    <constructor-arg value="2094577"></constructor-arg>
+    <constructor-arg value="Ujjain"></constructor-arg>
+    <constructor-arg value="India"></constructor-arg>  
+    </bean>
+    <bean id="student3" class="com.garvit.it.Student">
+    
+    
+     <constructor-arg value="10001"></constructor-arg>
+    <constructor-arg value="Bheeshma"></constructor-arg>
+    <constructor-arg ref="address2"></constructor-arg>
+    
+    <constructor-arg>
+            <map>
+                <entry key="Math" value="80"/>
+                <entry key="English" value="85"/>
+                <entry key="Physics" value="81"/>
+            </map>
+        </constructor-arg>
+    </bean>
+    
+    
+    
+    
+    
+    
+  
+
+</beans>
