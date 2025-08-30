@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module LearningAutoWiring {
+	exports com.garvit.it;
+	requires spring.context;
+}
